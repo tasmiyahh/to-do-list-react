@@ -1,0 +1,46 @@
+.todo{
+  display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    padding: 50px;
+}
+
+#button-addon2:hover{
+  cursor: pointer;
+}
+
+#button-addon2{
+  appearance: none;
+  border: none;
+  outline: none;
+  background: none;
+  background-color: #549BBE;
+  
+}
+#reset{
+  background-color: #2FB49E;
+  appearance: none;
+  border: none;
+  outline: none;
+}
+
+
+
+body{
+  background-color:#1F2937;
+}
+
+h1{
+  color: #6B7280;
+  text-align: center;
+  
+}
+
+#todo{
+  background-color:#374151;
+  color: #6B7280;
+  appearance: none;
+  border: none;
+  outline: none;
+}
