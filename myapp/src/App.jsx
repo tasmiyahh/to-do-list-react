@@ -15,9 +15,16 @@ const App = () => {
 
     const [data, setData] = useState([]);
     const [all, setall] = useState([])
+    var baseUrl;
+    if (window.location.href.indexOf("https") === -1) {
+      baseUrl = "http://localhost:5000";
+  } else {
+      baseUrl = "https://brainy-cyan-leggings.cyclic.app";
+  }
     useEffect(() => {
 
-        axios.get('https://brainy-cyan-leggings.cyclic.app/users')
+       
+        axios.get(`${baseUrl}/users`)
 
             .then(function (response) {
                 console.log(response.data);
@@ -38,7 +45,7 @@ const App = () => {
 
 
 
-        axios.post('https://brainy-cyan-leggings.cyclic.app/', {
+        axios.post(`${baseUrl}/`, {
             text: data
         })
             .then(function (response) {
