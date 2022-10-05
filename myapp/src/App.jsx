@@ -17,7 +17,7 @@ const App = () => {
     const [all, setall] = useState([])
     useEffect(() => {
 
-        axios.get('https://courageous-worm-waders.cyclic.app/users')
+        axios.get('https://brainy-cyan-leggings.cyclic.app/users')
 
             .then(function (response) {
                 console.log(response.data);
@@ -38,7 +38,7 @@ const App = () => {
 
 
 
-        axios.post('https://courageous-worm-waders.cyclic.app/', {
+        axios.post('https://brainy-cyan-leggings.cyclic.app/', {
             text: data
         })
             .then(function (response) {
