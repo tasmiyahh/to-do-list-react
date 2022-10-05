@@ -17,7 +17,7 @@ const App = () => {
     const [all, setall] = useState([])
     useEffect(() => {
 
-        axios.get('http://localhost:5000/users')
+        axios.get('https://courageous-worm-waders.cyclic.app/users')
 
             .then(function (response) {
                 console.log(response.data);
@@ -38,7 +38,7 @@ const App = () => {
 
 
 
-        axios.post('http://localhost:5000/', {
+        axios.post('https://courageous-worm-waders.cyclic.app/', {
             text: data
         })
             .then(function (response) {
